@@ -1,0 +1,22 @@
+:root {
+  --bg-color: light-dark(white, black);
+  --color: light-dark(black, white);
+  color-scheme: light dark;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  color: var(--color);
+  background-color: var(--bg-color);
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2em;
+}
+
