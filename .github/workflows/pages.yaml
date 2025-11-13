@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - './static-web'
+      - './static-web/*'
 
   workflow_dispatch:
 
