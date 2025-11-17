@@ -35,7 +35,7 @@ body {
 hr {
   height: 5px;
   border: 0;
-  box-shadow: 0 5px 5px -5px purple inset;
+  box-shadow: 0 5px 5px -5px rgb(194, 79, 194) inset;
 }
 
 a {
