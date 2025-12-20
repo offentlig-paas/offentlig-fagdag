@@ -1,5 +1,7 @@
 :root {
   --color: white;
+  --hrColor: rgb(194, 79, 194);
+  --dialogBackdropColor: rgb(194, 79, 194 / 25%);
   font-family: sans-serif;
 }
 
@@ -39,7 +41,7 @@ h1 {
 hr {
   height: 5px;
   border: 0;
-  box-shadow: 0 5px 5px -5px rgb(194, 79, 194) inset;
+  box-shadow: 0 5px 5px -5px var(--hrColor) inset;
 }
 
 a {
@@ -54,4 +56,26 @@ a {
 
 #about > p {
   margin: 2rem;
+}
+
+#cfpDialog::backdrop {
+  background-color: transparent;
+  transition:
+    display 0.7s allow-discrete,
+    overlay 0.7s allow-discrete,
+    background-color 0.7s;
+}
+
+#dialogCloseBtn {
+  margin: 0px auto;
+}
+
+#cfpDialog:open::backdrop {
+  background-color: rgb(255 255 255 / 20%);
+}
+
+@starting-style {
+  #cfpDialog:open::backdrop {
+    background-color: transparent;
+  }
 }

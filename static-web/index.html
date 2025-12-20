@@ -17,10 +17,28 @@
             <hr />
             <h3>23. april på <a href="https://meet-ullevaal.no">Meet Ullevål</a></h3>
             <hr />
+            <h3><a href="javascript:openCfpDialog()">Send inn</a> foredrag</h3>
+            <hr />
             <h3><a href="about.html">Les mer...</a></h3>
             <hr />
         </div>
     </section>
+
+    <dialog id="cfpDialog">
+        <p>Innsending åpner ganske snart. Stay tuned!</p>
+        <button id="dialogCloseBtn" autofocus>Lukk</button>
+    </dialog>
+
+    <script>
+        const openCfpDialog = () => {
+            const cfpDialog = document.getElementById("cfpDialog")
+            const closeBtn = document.getElementById("dialogCloseBtn")
+            closeBtn.addEventListener("click", () => {
+                cfpDialog.close()
+            })
+            cfpDialog.showModal()
+        }
+    </script>
 </body>
 
 </html>
