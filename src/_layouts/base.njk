@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Offentlig fagdag 2026, Konferansen for teknologer i offentlig sektor"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <title>{{ title }}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  </head>
+
+  <body>
+    <div>
+    <nav class="nav-container">
+        <a href="/">Hjem</a>
+        <a href="/about">Om oss</a>
+        <a href="/about.html">Partnere</a>
+        <a href="/gallery.html">Galleri</a>
+    </nav>
+    </div>
+    {{ content | safe }}
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
