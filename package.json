@@ -1,0 +1,25 @@
+{
+  "name": "offentlig-fagdag",
+  "version": "1.0.0",
+  "description": "Årets konferanse for alle som jobber med teknologi i offentlig sektor",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaximilianLloyd/offentlig-fagdag.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MaximilianLloyd/offentlig-fagdag/issues"
+  },
+  "homepage": "https://github.com/MaximilianLloyd/offentlig-fagdag#readme",
+  "devDependencies": {
+    "vite": "^7.3.1"
+  }
+}

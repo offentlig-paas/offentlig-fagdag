@@ -8,6 +8,8 @@
 # testing
 /coverage
 
+/static-web/dist
+
 # next.js
 /.next/
 /out/
