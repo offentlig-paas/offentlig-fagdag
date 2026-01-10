@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&display=swap");
+
+/* Inter - Body Font (Variable) */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300..600&display=swap");
+
+/* Space Mono - Monospace Font */
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+
+:root {
+  --color: white;
+  --hrColor: rgb(194, 79, 194);
+  --dialogBackdropColor: rgb(194, 79, 194 / 25%);
+  font-family: sans-serif;
+  --font-display: "Fraunces", Georgia, serif;
+  --font-body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  --font-mono: "Space Mono", "Courier New", monospace;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+.nav-container {
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  gap: 1rem;
+  justify-content: center;
+  padding: 1rem 0;
+  background-color: rgb(0 0 0 / 20%);
+}
+
+p,
+a {
+  font-family: var(--font-mono);
+}
+
+nav a {
+  color: var(--color);
+  background-color: var(--hrColor);
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  font-family: var(--font-mono);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: var(--color);
+  background-image: url(img/2025.jpg);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  backdrop-filter: brightness(20%);
+}
+
+h1 {
+  margin-top: 0;
+  padding-top: 2rem;
+}
+
+.read-more {
+  margin-bottom: 2rem;
+  text-align: center;
+  font-family: var(--font-mono);
+  text-underline-offset: 4px;
+}
+
+.main-section h1 {
+  font-size: 3rem;
+}
+
+.main-section {
+  margin: 0 auto;
+  display: flex;
+  /* align-items: center; */
+  padding-top: 15vh;
+  justify-content: center;
+  height: 100vh;
+}
+
+.main-section > * {
+  padding: 1rem;
+}
+
+.hero {
+  text-align: center;
+}
+
+.hero h3 {
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+}
+
+hr {
+  height: 5px;
+  border: 0;
+  box-shadow: 0 5px 5px -5px var(--hrColor) inset;
+}
+
+a {
+  text-decoration: underline;
+  color: var(--color);
+}
+
+#about {
+  width: 100%;
+  max-width: 760px;
+  padding-top: 140px;
+
+  margin: 0 auto;
+}
+
+#about h2 {
+  font-family: var(--font-display);
+  margin: 0;
+}
+
+#about > p {
+  margin: 2rem;
+}
+
+#cfpDialog::backdrop {
+  background-color: transparent;
+  transition: display 0.7s allow-discrete, overlay 0.7s allow-discrete,
+    background-color 0.7s;
+}
+
+#dialogCloseBtn {
+  margin: 0px auto;
+}
+
+#cfpDialog:open::backdrop {
+  background-color: rgb(255 255 255 / 20%);
+}
+
+@starting-style {
+  #cfpDialog:open::backdrop {
+    background-color: transparent;
+  }
+}

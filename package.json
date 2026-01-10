@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "vite",
-    "build": "vite build"
+    "dev": "eleventy --serve",
+    "build": "eleventy"
   },
   "repository": {
     "type": "git",
@@ -20,6 +20,6 @@
   },
   "homepage": "https://github.com/MaximilianLloyd/offentlig-fagdag#readme",
   "devDependencies": {
-    "vite": "^7.3.1"
+    "@11ty/eleventy": "^3.1.2"
   }
 }

@@ -10,6 +10,8 @@
 
 /static-web/dist
 
+/_site
+
 # next.js
 /.next/
 /out/
