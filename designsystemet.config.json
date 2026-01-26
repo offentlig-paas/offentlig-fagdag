@@ -1,0 +1,19 @@
+{
+	"$schema": "https://designsystemet.no/schemas/cli/1.11.0.json",
+	"outDir": "./design-tokens",
+	"themes": {
+		"off": {
+			"colors": {
+				"main": {
+					"accent": "#93B9FF"
+				},
+				"support": {},
+				"neutral": "#24272B"
+			},
+			"borderRadius": 9999,
+			"typography": {
+				"fontFamily": "IBM Plex Mono"
+			}
+		}
+	}
+}
