@@ -16,7 +16,7 @@
 			},
 			"overrides": {
 				"colors": {
-					"off": {
+					"accent": {
 						"base-default": {
 							"dark": "#14181E"
 						},
