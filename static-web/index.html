@@ -5,16 +5,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Offentlig fagdag 2026, Konferansen for teknologer i offentlig sektor">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../design-tokens-build/off.css">
+    <link rel="stylesheet" href="https://unpkg.com/@digdir/designsystemet-css@1.11.0/dist/src/index.css"
+        integrity="sha384-iQVX/eRD/62k5h5Q6ZYkiN2gavfLDZJUu5EudKV0DcTIKhkXbfWUgbas+JkoxIAg" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <script src="svg-components.js" defer></script>
     <title>Offentlig fagdag 2026</title>
 </head>
 
-<body>
-    <section class="hero" role="main">
+<body data-color-scheme="dark" data-color="accent">
+    <header class="off-header fixed-width">
+        <h1 class="ds-heading off-heading" data-color-scheme="light">
+            <span class="title">[OFF]</span>
+            <span class="subtitle">Offentlig fagdag</span>
+        </h1>
+        <nav class="off-nav">
+            <a class="ds-button off-button" data-variant="secondary" href="index.html">Om fagdagen</a>
+            <a class="ds-button off-button" data-variant="secondary" href="about.html">Program</a>
+        </nav>
+    </header>
+    <main class="sections">
+        <section class="fixed-width hero">
+            <icon-pc></icon-pc>
+            <div>
+                <h2 class="ds-heading" data-size="xxl">Offentlig fagdag 2026</h2>
+                <h3 class="ds-heading" data-size="xl">Konferansen for teknologer i offentlig sektors</h3>
+            </div>
+            <h3 class="ds-heading off-tint" data-size="xl">23. april på <a class="ds-link"
+                    href="https://meet-ullevaal.no">Meet
+                    Ullevål</a></h3>
+        </section>
+        <section class="fixed-width off-cards">
+            <div class="ds-card off-card">
+                <div class="off-tint circle">
+                    <icon-kaffekoppenkel></icon-kaffekoppenkel>
+                </div>
+                <a class="ds-link ds-heading" data-size="lg"
+                    href="https://event.checkin.no/188499/etatspaamelding-offentlig-fagdag-2026">Påmelding</a>
+            </div>
+            <div class="ds-card off-card">
+                <div class="off-tint circle">
+                    <icon-mikrofon></icon-mikrofon>
+                </div>
+                <a class="ds-link ds-heading" data-size="lg"
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSdRJRd7h4xbEpX-xh7UdE2CxdTQqnLJrOToifoSQUC_nI70bw/viewform?usp=sharing&ouid=107058326216933342350">Jeg
+                    vil holde foredrag</a>
+            </div>
+        </section>
+        <section class="bleed">
+            <icon-man4></icon-man4>
+            <h2>Sosialt på <a class="ds-link" href="https://brygg.no/">Brygg</a> klokken 16:30</h2>
+        </section>
+        <section class="fixed-width hero">
+            <h3 class="ds-heading" data-size="lg"><a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSdRJRd7h4xbEpX-xh7UdE2CxdTQqnLJrOToifoSQUC_nI70bw/viewform?usp=sharing&ouid=107058326216933342350">Send
+                    inn foredrag</a></h3>
+            <h3 class="ds-heading" data-size="lg"><a
+                    href="https://event.checkin.no/188499/etatspaamelding-offentlig-fagdag-2026">Påmelding</a></h3>
+            <h3 class="ds-heading" data-size="lg"><a href="about.html">Les mer...</a></h3>
+        </section>
         <div>
             <h1>Offentlig fagdag 2026</h1>
             <hr />
-            <h3>Konferansen for teknologer i offentlig sektor</h3>
+            <h2>Konferansen for teknologer i offentlig sektor</h2>
             <hr />
             <h3>23. april på <a href="https://meet-ullevaal.no">Meet Ullevål</a></h3>
             <hr />
@@ -29,12 +87,12 @@
             <h3><a href="about.html">Les mer...</a></h3>
             <hr />
         </div>
-    </section>
-
-    <dialog id="cfpDialog">
-        <p>Innsending åpner ganske snart. Stay tuned!</p>
-        <button id="dialogCloseBtn" autofocus>Lukk</button>
-    </dialog>
+    </main>
+    <footer class="off-footer" data-color-scheme="dark">
+        <div class="ds-heading off-heading">
+            <span class="title">[OFF]</span>
+        </div>
+    </footer>
 </body>
 
 </html>
