@@ -13,6 +13,19 @@
 			"borderRadius": 9999,
 			"typography": {
 				"fontFamily": "IBM Plex Mono"
+			},
+			"overrides": {
+				"colors": {
+					"off": {
+						"base-default": {
+							"dark": "#14181E"
+						},
+						"base-hover": {
+							"dark": "#1B2028"
+						}
+
+					}
+				}
 			}
 		}
 	}
