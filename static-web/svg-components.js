@@ -9,8 +9,8 @@ class SvgIcon extends HTMLElement {
 			const svgElement = svgDoc.querySelector("svg");
 
 			if (svgElement) {
-				svgElement.setAttribute("width", "11em");
-				svgElement.setAttribute("height", "11em");
+				svgElement.setAttribute("width", "1em");
+				svgElement.setAttribute("height", "1em");
 				svgElement.querySelectorAll("path").forEach((path) => {
 					path.setAttribute("fill", "currentColor");
 				});
