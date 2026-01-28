@@ -3,11 +3,11 @@
     "accent": {
       "1": {
         "$type": "color",
-        "$value": "#ffffff"
+        "$value": "#93B9FF"
       },
       "2": {
         "$type": "color",
-        "$value": "#eef4ff"
+        "$value": "#82A4E2"
       },
       "3": {
         "$type": "color",
