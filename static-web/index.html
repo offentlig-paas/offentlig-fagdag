@@ -31,74 +31,85 @@
     </header>
     <main>
         <div class="fixed-width hero">
-            <icon-pc></icon-pc>
-            <div>
+            <icon-pc aria-label="ikon av datamaskin"></icon-pc>
+            <div class="hero-text">
                 <h1 class="ds-heading" data-size="xxl">Offentlig fagdag 2026</h1>
-                <h2 class="ds-heading" data-size="xl">Konferansen for teknologer i offentlig sektors</h2>
+                <h2 class="ds-heading" data-size="lg">Konferansen for teknologer i offentlig sektors</h2>
             </div>
-            <h3 class="ds-heading off-tint hero-where" data-size="lg">23. april på <a class="ds-link"
+            <h3 class="ds-heading off-tint hero-where" data-size="md">23. april på <a class="ds-link"
                     href="https://meet-ullevaal.no">Meet
                     Ullevål</a></h3>
         </div>
         <div class="fixed-width action-cards">
             <div class="ds-card action-card">
-                <div class="action-icon circle">
-                    <icon-kaffekoppenkel></icon-kaffekoppenkel>
+                <div class="action-icon">
+                    <icon-kaffekoppenkel aria-label="ikon av en kaffekopp"></icon-kaffekoppenkel>
                 </div>
-                <a class="ds-link ds-heading" data-size="md"
-                    href="https://event.checkin.no/188499/etatspaamelding-offentlig-fagdag-2026">Jeg vil være
-                    deltaker</a>
+                <div class="action-description">
+                    <a class="ds-link ds-heading" data-size="md"
+                        href="https://event.checkin.no/188499/etatspaamelding-offentlig-fagdag-2026">Jeg vil være
+                        deltaker</a>
+                    <p class="ds-paragraph">Meld deg på nå for å sikre deg plass!</p>
+                </div>
             </div>
             <div class="ds-card action-card">
-                <div class="action-icon circle">
-                    <icon-mikrofon></icon-mikrofon>
+                <div class="action-icon">
+                    <icon-mikrofon aria-label="ikon av mikrofon"></icon-mikrofon>
                 </div>
-                <a class="ds-link ds-heading" data-size="md"
-                    href="https://docs.google.com/forms/d/e/1FAIpQLSdRJRd7h4xbEpX-xh7UdE2CxdTQqnLJrOToifoSQUC_nI70bw/viewform?usp=sharing&ouid=107058326216933342350">Jeg
-                    vil holde foredrag</a>
+                <div class="action-description">
+                    <a class="ds-link ds-heading" data-size="md"
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSdRJRd7h4xbEpX-xh7UdE2CxdTQqnLJrOToifoSQUC_nI70bw/viewform?usp=sharing&ouid=107058326216933342350">Jeg
+                        vil holde foredrag</a>
+                    <p class="ds-paragraph">Frist for innsending av forslag er 1. mars 2026</p>
+                </div>
             </div>
         </div>
         <div class="bleed">
             <div class="bg-tinted">
-                <section class="fixed-width horizontal">
-                    <icon-man4></icon-man4>
-                    <div>
-                        <h2>Sosialt på Brygg klokken 16:30</h2>
-                        <p>Etter en lang dag på konferanse er det godt med noe kaldt i glasset. Ble med på sosialisering
-                            osv....</p>
+                <section class="info-section">
+                    <icon-man7 aria-label="ikon av mann som sprudler"></icon-man7>
+                    <div class="info-section-text">
+                        <h2 class="ds-heading" data-size="lg">Sosialt på Brygg klokken 16:30</h2>
+                        <p class="ds-paragraph" data-size="lg">Etter en lang dag på konferanse er det godt med noe kaldt
+                            i glasset. Ble med på sosialisering
+                            på <a class="ds-link" href="https://brygg.no/">Brygg</a></p>
                     </div>
                 </section>
             </div>
             <div id="program">
-                <section class="fixed-width horizontal">
-                    <icon-manserpaakart></icon-manserpaakart>
-
-                    <div>
-                        <h2>Program</h2>
-                        <p>Her kommer programmet for dagen.</p>
+                <section class="info-section">
+                    <div class="info-section-text">
+                        <h2 class="ds-heading" data-size="lg">Program</h2>
+                        <p class="ds-paragraph" data-size="lg">Her kommer programmet for dagen så snart vi har det
+                            klart. Skriv mer om programmet her</p>
                     </div>
+                    <icon-manserpaakart aria-label="ikon av mann som ser på kart"></icon-manserpaakart>
                 </section>
             </div>
             <div class="bg-tinted">
-                <section class="fixed-width horizontal">
-                    <img src="./img/2025.jpg" alt="Publikum så ser på foredrag" />
-                    <div>
-                        <h2>Forrige år</h2>
-                        <p>Hvis du trenger inspirasjon til et foredrag kan du jo feks ta en titt på <a class="ds-link"
-                                href="https://offentligfagdag.no/2025">fjorårets program</a>.</p>
+                <section class="info-section info-section-text">
+                    <div class="info-section-text" style="align-items: center;">
+                        <h2 class="ds-heading" data-size="lg">Forrige år</h2>
+                        <p class="ds-paragraph" data-size="lg">Hvis du trenger inspirasjon til et foredrag kan du jo
+                            feks ta en titt på <a class="ds-link"
+                                href="https://sites.google.com/view/offentligfagdag25">fjorårets program</a>.</p>
                     </div>
+                    <!-- <img src="./img/2025.jpg" alt="Publikum som ser på foredrag" /> -->
+
                 </section>
             </div>
         </div>
 
     </main>
-    <footer class="footer" data-color-scheme="dark">
+    <footer data-color-scheme="dark">
         <div class="fixed-width information">
-            <div class="off-banner" data-color-scheme="light">
-                <span class="off-logo">[OFF]</span>
+            <div>
+                <div class="off-banner" data-color-scheme="light">
+                    <span data-size="xs" class="off-logo">[OFF]</span>
+                </div>
+                <p data-size="sm">2026 Offentlig fagdag. Laget med ❤️ av frivillige i offentlig sektor.</p>
             </div>
-            <p data-size="sm">2026 Offentlig fagdag. Laget med ❤️ av frivillige i offentlig sektor.</p>
-            <icon-kattekopp></icon-kattekopp>
+            <icon-kattekopp aria-label="ikon av en kattekopp"></icon-kattekopp>
         </div>
     </footer>
 </body>

@@ -13,8 +13,7 @@ body {
 }
 
 [data-size="xxl"] {
-	font-size: 5.8em;
-	font-weight: 500;
+	font-size: round(calc(6.5rem * var(--_ds-font-size-factor)), 1px);
 }
 
 h1,
@@ -47,7 +46,7 @@ main {
 	flex-direction: column;
 	align-items: center;
 	gap: var(--ds-size-26);
-	padding-block: var(--ds-size-26);
+	padding-top: var(--ds-size-26);
 }
 
 section {
@@ -61,26 +60,18 @@ header {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	padding-block: var(--ds-size-2);
+	padding-block: var(--ds-size-6);
 	padding-inline: var(--ds-size-2);
 }
 
 footer {
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
 	padding: var(--ds-size-9);
 
 	svg {
 		height: 3em;
 		width: auto;
 	}
-}
-
-footer .information {
-	margin: 0 auto;
-	display: flex;
-	justify-content: space-between;
 }
 
 nav {
@@ -136,60 +127,99 @@ nav {
 }
 .hero-where {
 	max-width: fit-content;
-	padding: var(--ds-size-2) var(--ds-size-8);
+	padding: var(--ds-size-5) var(--ds-size-8);
 	background-color: var(--accent-color-tinted-40);
+	/* background: var(--ds-color-surface-tinted); */
 	border-radius: var(--ds-border-radius-default);
-	margin-top: var(--ds-size-26);
+	margin-top: var(--ds-size-12);
+}
+
+.hero-text {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: var(--ds-size-4);
 }
 
 .action-card {
 	display: flex;
 	align-items: center;
 	min-width: 300px;
-	padding: var(--ds-size-6);
-	gap: var(--ds-size-6);
-	border-radius: var(--ds-border-radius-lg);
-	border: var(--ds-border-width-default) solid var(--ds-color-border-subtle);
-	background: var(--ds-color-surface-default);
 
+	padding: var(--ds-size-4);
+	gap: var(--ds-size-6);
+	border-radius: var(--ds-border-radius-md);
+	border: var(--ds-border-width-default) solid var(--ds-color-border-subtle);
+	background: var(--ds-color-surface-tinted);
+	box-shadow: -1px 1px 0 2px var(--ds-color-text-default);
+
+	& > * {
+		margin: 0;
+	}
+}
+
+.information {
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	.off-logo {
+		font-size: var(--ds-font-size-7);
+	}
+	> *:first-child {
+		display: flex;
+		gap: var(--ds-size-4);
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	.action-card {
+		box-shadow: none;
+	}
+}
+
+.action-icon {
+	position: relative;
 	svg {
-		height: 5em;
+		height: 7em;
 		width: auto;
 	}
 }
-.action-icon {
-	background-color: var(--accent-color-tinted-40);
-	position: relative;
-	icon-kaffekoppenkel {
-		position: absolute;
-		left: 2px;
-		top: 0;
-	}
+
+.action-description {
+	display: flex;
+	flex-direction: column;
+	gap: var(--ds-size-4);
 }
 
 .action-cards {
 	display: grid;
 	grid-template-columns: repeat(2, minmax(250px, 1fr));
-	gap: var(--ds-size-4);
+	gap: var(--ds-size-8);
 	align-items: stretch;
 	width: 100%;
 }
 
-.circle {
+.info-section {
 	display: flex;
-	align-items: center;
-	justify-content: center;
-	border-radius: 50%;
-	aspect-ratio: 1 / 1;
-	height: 5em;
-	width: 5em;
+	justify-content: space-between;
+	gap: var(--ds-size-10);
+	padding: var(--ds-size-6);
+	width: 1000px;
+
+	svg {
+		height: 15em;
+		width: auto;
+	}
 }
 
-.horizontal {
+.info-section-text {
 	display: flex;
-	justify-content: start;
+	flex-direction: column;
+	justify-content: space-between;
 	gap: var(--ds-size-4);
-	padding: var(--ds-size-6);
+	max-width: 700px;
 }
 
 .fixed-width {
@@ -211,6 +241,14 @@ nav {
 	justify-content: center;
 }
 
+.about-page {
+	gap: var(--ds-size-18);
+	padding-top: var(--ds-size-6);
+	padding-bottom: var(--ds-size-18);
+}
+.about-article {
+	padding: var(--ds-size-10);
+}
 .about-article > h2:not(:first-child) {
 	margin-top: var(--ds-size-10);
 }
@@ -247,52 +285,3 @@ nav {
 		max-width: 1320px;
 	}
 }
-
-/*
-
-.hero h1 {
-	font-size: 3rem;
-}
-
-.hero {
-	margin: 0 auto;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 100vh;
-}
-
-.hero > * {
-	padding: 1rem;
-}
-
-#about {
-	width: 70%;
-	margin: 0 auto;
-}
-
-#about > p {
-	margin: 2rem;
-}
-
-#cfpDialog::backdrop {
-	background-color: transparent;
-	transition:
-		display 0.7s allow-discrete,
-		overlay 0.7s allow-discrete,
-		background-color 0.7s;
-}
-
-#dialogCloseBtn {
-	margin: 0px auto;
-}
-
-#cfpDialog:open::backdrop {
-	background-color: rgb(255 255 255 / 20%);
-}
-
-@starting-style {
-	#cfpDialog:open::backdrop {
-		background-color: transparent;
-	}
-} */
