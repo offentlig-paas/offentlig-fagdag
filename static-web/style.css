@@ -89,7 +89,9 @@ nav {
 	gap: 1rem;
 }
 
-.off-heading {
+.off-banner {
+	font-family: var(--ds-font-family), monospace;
+	font-weight: 500;
 	display: flex;
 	flex-wrap: wrap;
 	margin: 0;
@@ -100,8 +102,10 @@ nav {
 }
 
 .off-logo {
+	font-size: var(--ds-font-size-8);
 	text-decoration: none;
 	font-weight: bold;
+	background: inherit;
 	color: var(--ds-color-neutral-base-contrast-default);
 	text-shadow: -2px 2px var(--ds-color-text-default);
 }
@@ -183,7 +187,7 @@ nav {
 
 .horizontal {
 	display: flex;
-	justify-content: space-between;
+	justify-content: start;
 	gap: var(--ds-size-4);
 	padding: var(--ds-size-6);
 }
@@ -201,6 +205,7 @@ nav {
 }
 
 .bleed > * {
+	padding-block: var(--ds-size-10);
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -208,7 +213,9 @@ nav {
 
 .about-article > h2:not(:first-child) {
 	margin-top: var(--ds-size-10);
-	line-height: 1.6;
+}
+.about-article > p {
+	margin-top: var(--ds-size-2);
 }
 
 @media (min-width: 576px) {
