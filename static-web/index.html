@@ -13,23 +13,23 @@
     <link rel="stylesheet" href="../design-tokens-build/off.css">
     <link rel="stylesheet" href="https://unpkg.com/@digdir/designsystemet-css@1.11.0/dist/src/index.css"
         integrity="sha384-iQVX/eRD/62k5h5Q6ZYkiN2gavfLDZJUu5EudKV0DcTIKhkXbfWUgbas+JkoxIAg" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
     <script src="svg-components.js" defer></script>
+    <link rel="stylesheet" href="style.css">
     <title>Offentlig fagdag 2026</title>
 </head>
 
 <body data-color-scheme="light" data-color="accent">
-    <header class="header fixed-width">
+    <header class="fixed-width">
         <h1 class="ds-heading off-heading" data-color-scheme="light" data-size="lg">
-            <span class="off-logo">[OFF]</span>
-            <span class="subtitle">Offentlig fagdag</span>
+            <a href="index.html" class="off-logo">[OFF]</a>
+            <span class="off-title">Offentlig fagdag</span>
         </h1>
-        <nav class="off-nav">
+        <nav>
             <a class="ds-button off-button" data-variant="secondary" href="about.html">Om fagdagen</a>
             <a class="ds-button off-button" data-variant="secondary" href="index.html#program">Program</a>
         </nav>
     </header>
-    <main class="main">
+    <main>
         <section class="fixed-width hero">
             <icon-pc></icon-pc>
             <div>
@@ -42,7 +42,7 @@
         </section>
         <div class="fixed-width action-cards">
             <div class="ds-card action-card">
-                <div class="off-tint circle">
+                <div class="action-icon circle">
                     <icon-kaffekoppenkel></icon-kaffekoppenkel>
                 </div>
                 <a class="ds-link ds-heading" data-size="md"
@@ -50,7 +50,7 @@
                     deltaker</a>
             </div>
             <div class="ds-card action-card">
-                <div class="off-tint circle">
+                <div class="action-icon circle">
                     <icon-mikrofon></icon-mikrofon>
                 </div>
                 <a class="ds-link ds-heading" data-size="md"
@@ -59,8 +59,8 @@
             </div>
         </div>
         <div class="bleed">
-            <div class="bg-tinted section">
-                <section class="fixed-width vertical-card">
+            <div class="bg-tinted">
+                <section class="fixed-width horizontal">
                     <icon-man4></icon-man4>
                     <div>
                         <h2>Sosialt på Brygg klokken 16:30</h2>
@@ -72,8 +72,8 @@
                     </div>
                 </section>
             </div>
-            <div class="section" id="program">
-                <section class="fixed-width vertical-card">
+            <div id="program">
+                <section class="fixed-width horizontal">
                     <div>
                         <h2>Program</h2>
                         <p>Her kommer programmet for dagen.</p>
@@ -81,8 +81,8 @@
                     <icon-manserpaakart></icon-manserpaakart>
                 </section>
             </div>
-            <div class="bg-tinted section">
-                <section class="fixed-width vertical-card">
+            <div class="bg-tinted">
+                <section class="fixed-width horizontal">
                     <img src="./img/2025.jpg" alt="Publikum så ser på foredrag" />
                     <div>
                         <h2>Forrige år</h2>

@@ -4,48 +4,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../design-tokens-build/off.css">
+    <link rel="stylesheet" href="https://unpkg.com/@digdir/designsystemet-css@1.11.0/dist/src/index.css"
+        integrity="sha384-iQVX/eRD/62k5h5Q6ZYkiN2gavfLDZJUu5EudKV0DcTIKhkXbfWUgbas+JkoxIAg" crossorigin="anonymous">
+    <script src="svg-components.js" defer></script>
     <link rel="stylesheet" href="style.css">
     <title>Offentlig fagdag 2026</title>
 </head>
 
 <body>
-    <article id="about">
-        <h2>Offentlig fagdag</h2>
-        <hr />
-        <h2>Hva og hvorfor?</h2>
-        Konferanser er dyrt, budsjettene er stramme og kunnskap er ferskvare. Vi har mye kompetanse i det offentlige,
-        men det er ikke alltid like enkelt å finne den - spesielt ikke på tvers av organisasjoner. Vi inviterer derfor
-        til en fagdag på tvers av organisasjoner hvor vi kan dele og lære sammen - og spille på de fagnettverkene vi
-        har.
-        <hr />
-        <h2>Innhold</h2>
-        Fagdagen springer ut av fagnettverkene Offentlig Frontend, Offentlig PaaS og Security Champions Norge, og det
-        faglige innholdet vil i hovedsak falle innunder (men ikke begrenses til) disse områdene. Vi legger opp til en
-        dag med høyt faglig innhold, nettverksbygging og gode diskusjoner. Det blir en konferanse med flere spor og
-        innhold og noe for enhver smak. Så om du jobber med UX, plattform, sikkerhet, frontend, backend eller
-        produktutvikling generelt så bli med på dag av og for nerder i det offentlige!
-        Hvis du trenger inspirasjon til et foredrag kan du jo feks ta en titt på <a
-            href="https://sites.google.com/view/offentligfagdag25">fjorårets program</a>.
-        <hr />
-        <h2>Hvor og når?</h2>
-        I fjor ble Oslo Event Hub fylt opp med 300 teknologer til urpremieren av "Offentlig Fagdag". I år har vi sikret
-        oss inntil 500 plasser når andre utgave av arrangementet går av stabelen 23. april på Meet Ullevål.
-        <hr />
-        <h2>Hvem står bak?</h2>
-        Bak arrangementet står frivillige ildsjeler fra Nav, Politiet, Meteorologisk institutt, Skatteetaten, Oslo
-        kommune og Digitaliseringsdirektoratet. En gjeng som mener det offentlige gjør mye kult som fortjener å deles.
-        <hr />
-        <h2>Påmelding og fakturering</h2>
-        Påmelding skjer ved at hver offentlige etat gjør en gruppepåmelding med hvor mange plasser de ønsker. Antall
-        plasser er bindende og en samlet faktura vil bli sendt basert på gruppepåmeldingen. Pris er 1200,- eks mva per
-        person. Det er fullt mulig å melde på flere grupper fra en virksomhet hvis man ønsker flere fakturaer, men av
-        praktiske hensyn ønsker vi så få fakturaer som mulig. Når det nærmer seg vil det komme en påmeldingsside hvor
-        enkeltpersoner fra virksomhetene registrerer seg mot den kvoten de har fått fra gruppepåmeldingen. I fjor ble
-        plassene fylt opp fort, og vi ønsker at flest mulig virksomheter skal få mulighet til å delta. Vi kan derfor
-        ikke love at man får like mange plasser som man ønsker, men vi kan love en rettferdig fordeling.
-        <hr />
-        <p><a href="index.html">Tilbake</a></p>
-    </article>
+    <header class="fixed-width">
+        <h1 class="ds-heading off-heading" data-color-scheme="light" data-size="lg">
+            <a href="index.html" class="off-logo">[OFF]</a>
+            <span class="off-title">Offentlig fagdag</span>
+        </h1>
+        <nav>
+            <a class="ds-button off-button" data-variant="secondary" href="about.html">Om fagdagen</a>
+            <a class="ds-button off-button" data-variant="secondary" href="index.html#program">Program</a>
+        </nav>
+    </header>
+    <main>
+        <icon-katteskjerm aria-label="ikon av katt oppå en skjerm"></icon-katteskjerm>
+        <article id="about" class="ds-card fixed-width about-article">
+            <h2 class="ds-heading">Hva og hvorfor?</h2>
+            <p class="ds-paragraph">
+                Konferanser er dyrt, budsjettene er stramme og kunnskap er ferskvare. Vi har mye kompetanse i det
+                offentlige,
+                men det er ikke alltid like enkelt å finne den - spesielt ikke på tvers av organisasjoner. Vi inviterer
+                derfor
+                til en fagdag på tvers av organisasjoner hvor vi kan dele og lære sammen - og spille på de
+                fagnettverkene vi
+                har.
+            </p>
+            <h2 class="ds-heading">Innhold</h2>
+            <p class="ds-paragraph">
+                Fagdagen springer ut av fagnettverkene Offentlig Frontend, Offentlig PaaS og Security Champions Norge,
+                og
+                det
+                faglige innholdet vil i hovedsak falle innunder (men ikke begrenses til) disse områdene. Vi legger opp
+                til
+                en
+                dag med høyt faglig innhold, nettverksbygging og gode diskusjoner. Det blir en konferanse med flere spor
+                og
+                innhold og noe for enhver smak. Så om du jobber med UX, plattform, sikkerhet, frontend, backend eller
+                produktutvikling generelt så bli med på dag av og for nerder i det offentlige!
+                Hvis du trenger inspirasjon til et foredrag kan du jo feks ta en titt på
+            </p><a class="ds-link" href="https://sites.google.com/view/offentligfagdag25">fjorårets program</a>.
+            <h2 class="ds-heading">Hvor og når?</h2>
+            <p class="ds-paragraph">
+                I fjor ble Oslo Event Hub fylt opp med 300 teknologer til urpremieren av "Offentlig Fagdag". I år har vi
+                sikret
+                oss inntil 500 plasser når andre utgave av arrangementet går av stabelen 23. april på Meet Ullevål.
+            </p>
+            <h2 class="ds-heading">Hvem står bak?</h2>
+            <p>
+                Bak arrangementet står frivillige ildsjeler fra Nav, Politiet, Meteorologisk institutt, Skatteetaten,
+                Oslo
+                kommune og Digitaliseringsdirektoratet. En gjeng som mener det offentlige gjør mye kult som fortjener å
+                deles.
+            </p>
+            <h2 class="ds-heading">Påmelding og fakturering</h2>
+            <p class="ds-paragraph">
+                Påmelding skjer ved at hver offentlige etat gjør en gruppepåmelding med hvor mange plasser de ønsker.
+                Antall
+                plasser er bindende og en samlet faktura vil bli sendt basert på gruppepåmeldingen. Pris er 1200,- eks
+                mva
+                per
+                person. Det er fullt mulig å melde på flere grupper fra en virksomhet hvis man ønsker flere fakturaer,
+                men
+                av
+                praktiske hensyn ønsker vi så få fakturaer som mulig. Når det nærmer seg vil det komme en påmeldingsside
+                hvor
+                enkeltpersoner fra virksomhetene registrerer seg mot den kvoten de har fått fra gruppepåmeldingen. I
+                fjor
+                ble
+                plassene fylt opp fort, og vi ønsker at flest mulig virksomheter skal få mulighet til å delta. Vi kan
+                derfor
+                ikke love at man får like mange plasser som man ønsker, men vi kan love en rettferdig fordeling.
+            </p>
+        </article>
+    </main>
+    <footer class="footer" data-color-scheme="dark">
+        <div class="fixed-width information">
+            <div class="ds-heading off-heading" data-color-scheme="light" data-size="sm">
+                <span class="off-logo">[OFF]</span>
+            </div>
+            <p data-size="sm">2026 Offentlig fagdag. Laget med ❤️ av frivillige i offentlig sektor.</p>
+            <icon-kattekopp></icon-kattekopp>
+        </div>
+    </footer>
 </body>
 
 </html>
