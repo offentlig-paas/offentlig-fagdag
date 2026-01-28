@@ -17,11 +17,11 @@
 			"overrides": {
 				"colors": {
 					"accent": {
-						"base-default": {
-							"dark": "#14181E"
+						"background-default": {
+							"light": "#93B9FF"
 						},
-						"base-hover": {
-							"dark": "#1B2028"
+						"background-tinted": {
+							"light": "#82A4E2"
 						}
 
 					}
