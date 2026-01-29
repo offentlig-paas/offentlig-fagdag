@@ -8,6 +8,9 @@ class SvgIcon extends HTMLElement {
 			const svgDoc = parser.parseFromString(svgText, "image/svg+xml");
 			const svgElement = svgDoc.querySelector("svg");
 
+			this.setAttribute("aria-hidden", "true");
+			this.setAttribute("focusable", "false");
+
 			if (svgElement) {
 				svgElement.setAttribute("width", "1em");
 				svgElement.setAttribute("height", "1em");
