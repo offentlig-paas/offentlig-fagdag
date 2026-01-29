@@ -144,7 +144,8 @@ nav {
 .action-card {
 	display: flex;
 	align-items: center;
-	min-width: 300px;
+	flex: 1;
+	min-width: 400px;
 
 	padding: var(--ds-size-4);
 	gap: var(--ds-size-6);
@@ -194,11 +195,9 @@ nav {
 }
 
 .action-cards {
-	display: grid;
-	grid-template-columns: repeat(2, minmax(250px, 1fr));
+	display: flex;
+	flex-wrap: wrap;
 	gap: var(--ds-size-8);
-	align-items: stretch;
-	width: 100%;
 }
 
 .info-section {
