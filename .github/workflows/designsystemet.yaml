@@ -28,7 +28,7 @@ jobs:
         run: npx --yes @digdir/designsystemet@latest tokens create --clean
 
       - name: Build design tokens
-        run: npx --yes @digdir/designsystemet@latest tokens build --clean
+        run: npx --yes @digdir/designsystemet@latest tokens build --clean --out-dir ./static-web/theme
 
       - name: Commit
         run: |
