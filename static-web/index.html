@@ -5,36 +5,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Offentlig fagdag 2026, Konferansen for teknologer i offentlig sektor">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../design-tokens-build/off.css">
+    <link rel="stylesheet" href="https://unpkg.com/@digdir/designsystemet-css@1.11.0/dist/src/index.css"
+        integrity="sha384-iQVX/eRD/62k5h5Q6ZYkiN2gavfLDZJUu5EudKV0DcTIKhkXbfWUgbas+JkoxIAg" crossorigin="anonymous">
+    <script src="svg-components.js" defer></script>
     <link rel="stylesheet" href="style.css">
     <title>Offentlig fagdag 2026</title>
 </head>
 
-<body>
-    <section class="hero" role="main">
-        <div>
-            <h1>Offentlig fagdag 2026</h1>
-            <hr />
-            <h3>Konferansen for teknologer i offentlig sektor</h3>
-            <hr />
-            <h3>23. april på <a href="https://meet-ullevaal.no">Meet Ullevål</a></h3>
-            <hr />
-            <h3>Sosialt på <a href="https://brygg.no/">Brygg</a> kl16:30</h3>
-            <hr />
-            <h3><a
-                    href="https://docs.google.com/forms/d/e/1FAIpQLSdRJRd7h4xbEpX-xh7UdE2CxdTQqnLJrOToifoSQUC_nI70bw/viewform?usp=sharing&ouid=107058326216933342350">Send
-                    inn</a> foredrag</h3>
-            <hr />
-            <h3><a href="https://event.checkin.no/188499/etatspaamelding-offentlig-fagdag-2026">Påmelding</a></h3>
-            <hr />
-            <h3><a href="about.html">Les mer...</a></h3>
-            <hr />
+<body data-color-scheme="auto" data-color="accent">
+    <header class="fixed-width">
+        <div class="off-banner" data-color-scheme="light">
+            <a href="index.html" class="off-logo">[OFF]</a>
+            <span class="off-title">Offentlig fagdag</span>
         </div>
-    </section>
+        <nav>
+            <a class="ds-button off-button" data-variant="secondary" href="about.html">Om fagdagen</a>
+            <a class="ds-button off-button" data-variant="secondary" href="index.html#program">Program</a>
+        </nav>
+    </header>
+    <main>
+        <div class="fixed-width hero">
+            <icon-pc></icon-pc>
+            <div class="hero-text">
+                <h1 class="ds-heading" data-size="xxl">Offentlig fagdag 2026</h1>
+                <h2 class="ds-heading" data-size="lg">Konferansen for teknologer i offentlig sektors</h2>
+            </div>
+            <h3 class="ds-heading off-tint hero-where" data-size="md">23. april på <a class="ds-link"
+                    href="https://meet-ullevaal.no">Meet
+                    Ullevål</a></h3>
+        </div>
+        <div class="fixed-width action-cards">
+            <div class="ds-card action-card">
+                <div class="action-icon">
+                    <icon-kaffekoppenkel></icon-kaffekoppenkel>
+                </div>
+                <div class="action-description">
+                    <a class="ds-link ds-heading" data-size="md"
+                        href="https://event.checkin.no/188499/etatspaamelding-offentlig-fagdag-2026">Jeg vil være
+                        deltaker</a>
+                    <p class="ds-paragraph">Meld deg på nå for å sikre deg plass!</p>
+                </div>
+            </div>
+            <div class="ds-card action-card">
+                <div class="action-icon">
+                    <icon-mikrofon></icon-mikrofon>
+                </div>
+                <div class="action-description">
+                    <a class="ds-link ds-heading" data-size="md"
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSdRJRd7h4xbEpX-xh7UdE2CxdTQqnLJrOToifoSQUC_nI70bw/viewform?usp=sharing&ouid=107058326216933342350">Jeg
+                        vil holde foredrag</a>
+                    <p class="ds-paragraph">Frist for innsending av forslag er <strong>2. mars 2026.</strong></p>
+                </div>
+            </div>
+        </div>
+        <div class="bleed">
+            <div class="bg-tinted">
+                <section class="info-section">
+                    <icon-man7 aria-label="ikon av mann som sprudler"></icon-man7>
+                    <div class="info-section-text">
+                        <h2 class="ds-heading" data-size="lg">Sosialt på Brygg klokken 16:30</h2>
+                        <p class="ds-paragraph" data-size="lg">Etter en lang dag på konferanse er det godt med noe mat
+                            og kaldt i glasset. Her vil det også være mulig å kjøpe mat. Bli med på sosialisering på <a
+                                class="ds-link" href="https://brygg.no/">Brygg</a>.</p>
+                    </div>
+                </section>
+            </div>
+            <div id="program">
+                <section class="info-section">
+                    <div class="info-section-text">
+                        <h2 class="ds-heading" data-size="lg">Program</h2>
+                        <p class="ds-paragraph" data-size="lg">Her kommer programmet for dagen så snart vi har det
+                            klart.</p>
+                    </div>
+                    <icon-manserpaakart></icon-manserpaakart>
+                </section>
+            </div>
+            <div class="bg-tinted">
+                <section class="info-section info-section-text">
+                    <div class="info-section-text" style="align-items: center;">
+                        <h2 class="ds-heading" data-size="lg">Forrige år</h2>
+                        <p class="ds-paragraph" data-size="lg">Hvis du trenger inspirasjon til et foredrag kan du jo
+                            f.eks ta en titt på <a class="ds-link"
+                                href="https://sites.google.com/view/offentligfagdag25">fjorårets program</a>.</p>
+                    </div>
+                    <!-- <img src="./img/2025.jpg" alt="Publikum som ser på foredrag" /> -->
 
-    <dialog id="cfpDialog">
-        <p>Innsending åpner ganske snart. Stay tuned!</p>
-        <button id="dialogCloseBtn" autofocus>Lukk</button>
-    </dialog>
+                </section>
+            </div>
+        </div>
+
+    </main>
+    <footer data-color-scheme="dark">
+        <div class="fixed-width information">
+            <div>
+                <div class="off-banner" data-color-scheme="light">
+                    <span data-size="xs" class="off-logo">[OFF]</span>
+                </div>
+                <p data-size="sm">2026 Offentlig fagdag. Laget med ❤️ av frivillige i offentlig sektor.</p>
+            </div>
+            <icon-kattekopp aria-label="ikon av en kattekopp"></icon-kattekopp>
+        </div>
+    </footer>
 </body>
 
 </html>
