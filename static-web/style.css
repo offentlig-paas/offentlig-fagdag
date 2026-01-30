@@ -1,6 +1,5 @@
 body {
 	--accent-color-tinted-40: rgba(221, 233, 255, 0.4);
-	--ds-link-color-visited: var(--ds-color-text-default);
 
 	font-feature-settings: "ss04" off;
 	font-family: "IBM Plex Sans", sans-serif;
@@ -26,6 +25,8 @@ h6 {
 }
 
 a {
+	--dsc-link-color--visited: var(--ds-color-text-default);
+	--dsc-link-color: var(--ds-color-text-default);
 	margin: 0;
 }
 
