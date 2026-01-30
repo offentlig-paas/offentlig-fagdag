@@ -25,54 +25,54 @@ class SvgIcon extends HTMLElement {
 	}
 }
 
-customElements.define(
-	"icon-man1",
-	class Man1Icon extends SvgIcon {
-		connectedCallback() {
-			this.loadSvg("img/man1.svg");
-		}
-	},
-);
-customElements.define(
-	"icon-man2",
-	class Man2Icon extends SvgIcon {
-		connectedCallback() {
-			this.loadSvg("img/man2.svg");
-		}
-	},
-);
-customElements.define(
-	"icon-man3",
-	class Man3Icon extends SvgIcon {
-		connectedCallback() {
-			this.loadSvg("img/man3.svg");
-		}
-	},
-);
-customElements.define(
-	"icon-man4",
-	class Man4Icon extends SvgIcon {
-		connectedCallback() {
-			this.loadSvg("img/man4.svg");
-		}
-	},
-);
-customElements.define(
-	"icon-man5",
-	class Man5Icon extends SvgIcon {
-		connectedCallback() {
-			this.loadSvg("img/man5.svg");
-		}
-	},
-);
-customElements.define(
-	"icon-man6",
-	class Man6Icon extends SvgIcon {
-		connectedCallback() {
-			this.loadSvg("img/man6.svg");
-		}
-	},
-);
+// customElements.define(
+// 	"icon-man1",
+// 	class Man1Icon extends SvgIcon {
+// 		connectedCallback() {
+// 			this.loadSvg("img/man1.svg");
+// 		}
+// 	},
+// );
+// customElements.define(
+// 	"icon-man2",
+// 	class Man2Icon extends SvgIcon {
+// 		connectedCallback() {
+// 			this.loadSvg("img/man2.svg");
+// 		}
+// 	},
+// );
+// customElements.define(
+// 	"icon-man3",
+// 	class Man3Icon extends SvgIcon {
+// 		connectedCallback() {
+// 			this.loadSvg("img/man3.svg");
+// 		}
+// 	},
+// );
+// customElements.define(
+// 	"icon-man4",
+// 	class Man4Icon extends SvgIcon {
+// 		connectedCallback() {
+// 			this.loadSvg("img/man4.svg");
+// 		}
+// 	},
+// );
+// customElements.define(
+// 	"icon-man5",
+// 	class Man5Icon extends SvgIcon {
+// 		connectedCallback() {
+// 			this.loadSvg("img/man5.svg");
+// 		}
+// 	},
+// );
+// customElements.define(
+// 	"icon-man6",
+// 	class Man6Icon extends SvgIcon {
+// 		connectedCallback() {
+// 			this.loadSvg("img/man6.svg");
+// 		}
+// 	},
+// );
 customElements.define(
 	"icon-man7",
 	class Man7Icon extends SvgIcon {
@@ -105,14 +105,14 @@ customElements.define(
 		}
 	},
 );
-customElements.define(
-	"icon-kaffekopper",
-	class KaffekopperIcon extends SvgIcon {
-		connectedCallback() {
-			this.loadSvg("img/kaffekopper 1.svg");
-		}
-	},
-);
+// customElements.define(
+// 	"icon-kaffekopper",
+// 	class KaffekopperIcon extends SvgIcon {
+// 		connectedCallback() {
+// 			this.loadSvg("img/kaffekopper 1.svg");
+// 		}
+// 	},
+// );
 customElements.define(
 	"icon-kattekopp",
 	class KattekoppIcon extends SvgIcon {
@@ -145,11 +145,11 @@ customElements.define(
 		}
 	},
 );
-customElements.define(
-	"icon-ben",
-	class BenIcon extends SvgIcon {
-		connectedCallback() {
-			this.loadSvg("img/Ben.svg");
-		}
-	},
-);
+// customElements.define(
+// 	"icon-ben",
+// 	class BenIcon extends SvgIcon {
+// 		connectedCallback() {
+// 			this.loadSvg("img/Ben.svg");
+// 		}
+// 	},
+// );
