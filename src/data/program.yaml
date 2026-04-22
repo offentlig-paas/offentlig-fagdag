@@ -491,7 +491,27 @@ rooms:
       track: Workshop
       title: Leesah Game
       speaker: Kyrre Havik
-      description: "Leesah Game er et kurs vi har lang erfaring med å holde som vi har holdt flere ganger tidligere på universiteter og høyskoler i Norge siden 2021, på JavaZone i 2024 og på Booster Conference, NDC Oslo og Cloud Native Bergen i 2025. Spillet utvikles av flere utviklere fra Nav som jobber sammen på fagsamlinger annenhver uke, slik at kurset blir kontinuerlig utviklet. Kurset er en god øvelse i blant annet parprogrammering, løsing av oppgaver og hendelsesdrevet programmering. \n\nI Nav utvikler vi moderne systemer i hendelsesdrevet mikrotjenestearkitektur som skal løse fremtidens arbeids- og velferdsbehov. Nå vil vi lære dere mer om hvordan vi bygger applikasjoner og hvordan hendelsesdrevne systemer kan brukes til å løse komplekse utfordringer.\n\nVi kommer til å presentere viktige prinsipper bak hendelsesdrevne systemer før vi kjører i gang med et “gamified” opplegg hvor man koder sammen to og to. Gjennom kurset skal man utvikle en applikasjon som kobles mot Kafka for å motta utfordringer deltagerenes applikasjon må håndtere. Dette blir en morsom workshop med litt utfordring og mye moro!\n\nVi ønsker å holde Leesah Game på fagdagen for teknologi i offentlig sektor fordi vi ønsker å spre kunnskapen om hendelsesdrevet utvikling."
+      description: |-
+        Leesah Game er et kurs vi har lang erfaring med å holde som vi har holdt flere ganger tidligere på universiteter og høyskoler i Norge siden 2021, på JavaZone i 2024 og på Booster Conference, 
+        NDC Oslo og Cloud Native Bergen i 2025. Spillet utvikles av flere utviklere fra Nav som jobber sammen på fagsamlinger annenhver uke, slik at kurset blir kontinuerlig utviklet. 
+        Kurset er en god øvelse i blant annet parprogrammering, løsing av oppgaver og hendelsesdrevet programmering.
+        
+        I Nav utvikler vi moderne systemer i hendelsesdrevet mikrotjenestearkitektur som skal løse fremtidens arbeids- og velferdsbehov. Nå vil vi lære dere mer om hvordan vi bygger applikasjoner 
+        og hvordan hendelsesdrevne systemer kan brukes til å løse komplekse utfordringer. Vi kommer til å presentere viktige prinsipper bak hendelsesdrevne systemer før vi kjører i gang med 
+        et “gamified” opplegg hvor man koder sammen to og to. Gjennom kurset skal man utvikle en applikasjon som kobles mot Kafka for å motta utfordringer deltagerenes applikasjon må håndtere. 
+        
+        Dette blir en morsom workshop med litt utfordring og mye moro! Vi ønsker å holde Leesah Game på fagdagen for teknologi i offentlig sektor fordi vi ønsker å spre kunnskapen om 
+        hendelsesdrevet utvikling.
+        
+         Før du kommer til kurset:
+
+        * Installer en valgfri IDE
+
+        * Installér Python 3.10 (eller nyere) – <a class="ds-link" href="https://www.python.org/downloads/">https://www.python.org/downloads/</a>
+
+        * Ta gjerne en titt på <a class="ds-link" href="https://kafka.apache.org/">https://kafka.apache.org/</a>
+
+        * Ta med pc/mac til kurset
   - time: '11:50'
     event: Lunsj
   - time: 13:00–17:00
