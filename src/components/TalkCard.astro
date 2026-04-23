@@ -6,9 +6,10 @@ interface Props {
   speaker?: string;
   description?: string;
   track?: string;
+  room?: string;
 }
 
-const { id, org, title, speaker, description, track } = Astro.props;
+const { id, org, title, speaker, description, track, room } = Astro.props;
 
 // Split description into paragraphs by blank lines.
 const paragraphs = description
@@ -38,6 +39,7 @@ const paragraphs = description
     </svg>
   </button>
   {org && <span class="schedule-org">{org}</span>}
+  {room && <span class="schedule-room">{room}</span>}
   {track && <span class="schedule-track">{track}</span>}
   <h3 class="ds-heading" data-size="sm">{title}</h3>
   {speaker && <span class="ds-paragraph schedule-speaker" data-size="sm">{speaker}</span>}
