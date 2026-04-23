@@ -1,8 +1,8 @@
 const API_BASE = 'https://fagdag-openspace.ekstern.dev.nav.no';
 const topicsList = document.getElementById('topics-list');
 const topicCount = document.getElementById('topic-count');
-const topicForm = document.getElementById('topic-form');
-const topicInput = document.getElementById('topic-input');
+// const topicForm = document.getElementById('topic-form');
+// const topicInput = document.getElementById('topic-input');
 
 function getVotedIds() {
     try {
@@ -51,18 +51,17 @@ function renderTopics(topics) {
         return `
         <div class="ds-card openspace-topic" data-color="neutral">
             <div class="ds-card__block openspace-topic-row">
-                <button class="ds-button off-button openspace-vote-btn${voted ? ' voted' : ''}" data-variant="secondary" data-id="${topic.id}" ${voted ? 'disabled' : ''} aria-label="${voted ? 'Du har stemt på' : 'Stem på'} ${escapeHtml(topic.title)}">
-                    <span>${voted ? '✔' : '▲'}</span>
+                <div class="ds-button off-button" data-variant="secondary" data-id="${topic.id}" ${voted ? "disabled" : ""}>
                     <span>${topic.votes}</span>
-                </button>
+                </div>
                 <span class="ds-paragraph">${escapeHtml(topic.title)}</span>
             </div>
         </div>
-    `}).join('');
+    `;}).join('');
 
-    topicsList.querySelectorAll('.openspace-vote-btn:not([disabled])').forEach(btn => {
-        btn.addEventListener('click', () => vote(btn, btn.dataset.id));
-    });
+    // topicsList.querySelectorAll('.openspace-vote-btn:not([disabled])').forEach(btn => {
+    //     btn.addEventListener('click', () => vote(btn, btn.dataset.id));
+    // });
 }
 
 function escapeHtml(text) {
@@ -71,49 +70,49 @@ function escapeHtml(text) {
     return div.innerHTML;
 }
 
-async function vote(btn, id) {
-    if (hasVoted(id)) return;
-    btn.disabled = true;
-    try {
-        const res = await fetch(`${API_BASE}/api/topics/${id}/vote`, { method: 'POST' });
-        if (!res.ok) throw new Error('Kunne ikke stemme');
-        markVoted(id);
-        fetchTopics();
-    } catch (err) {
-        btn.disabled = false;
-    }
-}
+// async function vote(btn, id) {
+//     if (hasVoted(id)) return;
+//     btn.disabled = true;
+//     try {
+//         const res = await fetch(`${API_BASE}/api/topics/${id}/vote`, { method: 'POST' });
+//         if (!res.ok) throw new Error('Kunne ikke stemme');
+//         markVoted(id);
+//         fetchTopics();
+//     } catch (err) {
+//         btn.disabled = false;
+//     }
+// }
 
-topicForm.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    const title = topicInput.value.trim();
-    if (!title) return;
+// topicForm.addEventListener('submit', async (e) => {
+//     e.preventDefault();
+//     const title = topicInput.value.trim();
+//     if (!title) return;
 
-    const submitBtn = topicForm.querySelector('button[type="submit"]');
-    submitBtn.disabled = true;
+//     const submitBtn = topicForm.querySelector('button[type="submit"]');
+//     submitBtn.disabled = true;
 
-    try {
-        const res = await fetch(`${API_BASE}/api/topics`, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ title }),
-        });
-        if (!res.ok) throw new Error('Kunne ikke sende inn tema');
-        topicInput.value = '';
-        fetchTopics();
-    } catch (err) {
-        const card = topicForm.closest('.ds-card');
-        const existing = card.querySelector('.ds-alert');
-        if (existing) existing.remove();
-        const alert = document.createElement('div');
-        alert.className = 'ds-alert';
-        alert.dataset.color = 'danger';
-        alert.innerHTML = '<p>Kunne ikke sende inn tema. Prøv igjen.</p>';
-        card.appendChild(alert);
-        setTimeout(() => alert.remove(), 4000);
-    } finally {
-        submitBtn.disabled = false;
-    }
-});
+//     try {
+//         const res = await fetch(`${API_BASE}/api/topics`, {
+//             method: 'POST',
+//             headers: { 'Content-Type': 'application/json' },
+//             body: JSON.stringify({ title }),
+//         });
+//         if (!res.ok) throw new Error('Kunne ikke sende inn tema');
+//         topicInput.value = '';
+//         fetchTopics();
+//     } catch (err) {
+//         const card = topicForm.closest('.ds-card');
+//         const existing = card.querySelector('.ds-alert');
+//         if (existing) existing.remove();
+//         const alert = document.createElement('div');
+//         alert.className = 'ds-alert';
+//         alert.dataset.color = 'danger';
+//         alert.innerHTML = '<p>Kunne ikke sende inn tema. Prøv igjen.</p>';
+//         card.appendChild(alert);
+//         setTimeout(() => alert.remove(), 4000);
+//     } finally {
+//         submitBtn.disabled = false;
+//     }
+// });
 
 fetchTopics();
