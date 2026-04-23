@@ -510,6 +510,19 @@ header .off-logo {
 	border-radius: 0.2em;
 }
 
+.schedule-room {
+	display: inline-block;
+	font-size: var(--ds-font-size-0);
+	font-weight: 600;
+	font-family: var(--ds-font-family), monospace;
+	padding: var(--ds-size-1) var(--ds-size-3);
+	background: var(--ds-color-neutral-surface-default);
+	border: var(--ds-border-width-default) solid var(--ds-color-border-subtle);
+	width: fit-content;
+	border-radius: 0.2em;
+	color: var(--ds-color-neutral-text-subtle);
+}
+
 .schedule-speaker {
 	font-weight: 600;
 	font-size: var(--ds-font-size-2);

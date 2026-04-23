@@ -14,6 +14,7 @@ interface Talk {
   speaker?: string;
   description?: string;
   track?: string;
+  room?: string;
 }
 interface Slot {
   time: string;
@@ -33,7 +34,7 @@ for (const room of program.rooms) {
     if (!block.talks) continue;
     const key = slotKey(block.time, block.duration);
     if (!slots.has(key)) slots.set(key, { time: block.time, duration: block.duration, talks: [] });
-    slots.get(key)!.talks.push(...block.talks);
+    slots.get(key)!.talks.push(...block.talks.map((t: Talk) => ({ ...t, room: room.name })));
   }
 }
 const favouriteSchedule: Slot[] = [...slots.values()].sort((a, b) => parseTime(a.time) - parseTime(b.time));
