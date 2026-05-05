@@ -1,43 +1,50 @@
 ---
-import Base from '../layouts/Base.astro';
-import ScheduleBlock from '../components/ScheduleBlock.astro';
-import { parse } from 'yaml';
-import programYaml from '../data/program.yaml?raw';
+import { parse } from "yaml";
+import ScheduleBlock from "../components/ScheduleBlock.astro";
+import programYaml from "../data/program.yaml?raw";
+import Base from "../layouts/Base.astro";
 
 const program = parse(programYaml);
 
 // Build aggregated "Mine favoritter" schedule: all talks across rooms, grouped by time slot, chronologically.
 interface Talk {
-  id: string;
-  org?: string;
-  title: string;
-  speaker?: string;
-  description?: string;
-  track?: string;
-  room?: string;
+	id: string;
+	org?: string;
+	title: string;
+	speaker?: string;
+	description?: string;
+	track?: string;
+	room?: string;
+	vimeo?: string;
 }
 interface Slot {
-  time: string;
-  duration?: string;
-  talks: Talk[];
+	time: string;
+	duration?: string;
+	talks: Talk[];
 }
 
-const slotKey = (time: string, duration?: string) => `${time}|${duration ?? ''}`;
+const slotKey = (time: string, duration?: string) =>
+	`${time}|${duration ?? ""}`;
 const parseTime = (t: string): number => {
-  const m = /(\d{1,2}):(\d{2})/.exec(t);
-  return m ? parseInt(m[1], 10) * 60 + parseInt(m[2], 10) : 0;
+	const m = /(\d{1,2}):(\d{2})/.exec(t);
+	return m ? parseInt(m[1], 10) * 60 + parseInt(m[2], 10) : 0;
 };
 
 const slots = new Map<string, Slot>();
 for (const room of program.rooms) {
-  for (const block of room.schedule) {
-    if (!block.talks) continue;
-    const key = slotKey(block.time, block.duration);
-    if (!slots.has(key)) slots.set(key, { time: block.time, duration: block.duration, talks: [] });
-    slots.get(key)!.talks.push(...block.talks.map((t: Talk) => ({ ...t, room: room.name })));
-  }
+	for (const block of room.schedule) {
+		if (!block.talks) continue;
+		const key = slotKey(block.time, block.duration);
+		if (!slots.has(key))
+			slots.set(key, { time: block.time, duration: block.duration, talks: [] });
+		slots
+			.get(key)!
+			.talks.push(...block.talks.map((t: Talk) => ({ ...t, room: room.name })));
+	}
 }
-const favouriteSchedule: Slot[] = [...slots.values()].sort((a, b) => parseTime(a.time) - parseTime(b.time));
+const favouriteSchedule: Slot[] = [...slots.values()].sort(
+	(a, b) => parseTime(a.time) - parseTime(b.time),
+);
 ---
 
 <Base

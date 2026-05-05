@@ -1,23 +1,25 @@
 ---
 interface Props {
-  id: string;
-  org?: string;
-  title: string;
-  speaker?: string;
-  description?: string;
-  track?: string;
-  room?: string;
+	id: string;
+	org?: string;
+	title: string;
+	speaker?: string;
+	description?: string;
+	track?: string;
+	room?: string;
+	vimeo?: string;
 }
 
-const { id, org, title, speaker, description, track, room } = Astro.props;
+const { id, org, title, speaker, description, track, room, vimeo } =
+	Astro.props;
 
 // Split description into paragraphs by blank lines.
 const paragraphs = description
-  ? description
-      .split(/\n\s*\n/)
-      .map(p => p.trim())
-      .filter(Boolean)
-  : [];
+	? description
+			.split(/\n\s*\n/)
+			.map((p) => p.trim())
+			.filter(Boolean)
+	: [];
 ---
 
 <div class="schedule-talk" data-talk-id={id}>
@@ -47,5 +49,8 @@ const paragraphs = description
     <div class="schedule-description">
       {paragraphs.map(p => <p class="ds-paragraph" data-size="sm" set:html={p} />)}
     </div>
+  )}
+  {vimeo && (
+      <a class="ds-link" href={vimeo} target="_blank" rel="noopener noreferrer">Se opptak av {title} på vimeo.com</a>
   )}
 </div>
