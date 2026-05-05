@@ -14,6 +14,7 @@ rooms:
       title: Velkomsttale
       speaker: Arrangørene av Offentlig Fagdag
       description: Arrangørene ønsker velkommen til fagdagen og gir en kort introduksjon til dagens program.
+      vimeo: https://vimeo.com/1189040200/d7c7e94443
   - time: 09:10
     event: Pause
   - time: 09:20–09:50
@@ -38,6 +39,7 @@ rooms:
         - bruk av LLM til koding - kompilerer det/passerer det tester, funker det
         - stålkontroll på hva som dras inn i bygg, og hva som spyttes ut i andre enden
         - portabelt mellom andre x86-64_linux systemer! (lokal laptop, github actions CI/CD, k8s containers)
+      vimeo: https://vimeo.com/1189036147/6d3b843fcd
   - time: 09:50
     event: Pause
   - time: 10:00–10:30
@@ -49,6 +51,7 @@ rooms:
       speaker: Eirik Backer og Tobias Barsnes
       description: |-
         Digdir lanserte sist år «Designsystemet» – en verktøykasse for å enkelt lage digitale tjenester eller bygge nye designsystem med egen identitet. Fint og flott! Men, hvilke rammeverk skal vi støtte? Er ren HTML, CSS og JS nok? Og hva betyr det for deg? Teaser: WebComponents er ikke alltid svaret.
+      vimeo: https://vimeo.com/1189034128/7e4ae6ba06
   - time: '10:30'
     event: Pause
   - time: 10:40–11:10
@@ -62,6 +65,7 @@ rooms:
         AI revolusjonerer måten vi skriver kode og bygger løsninger på – vi får mer gjort, raskere enn noen gang. Men AI er i bunn og grunn en avansert auto-complete som gjetter seg til neste ord; den bruker ikke applikasjonen din som et menneske. Den kjenner ikke hvordan det føles å klikke seg gjennom et skjema, navigere en meny eller tolke en fargepalett. Noen hevder frontend er det første AI kan erstatte, men jeg mener det motsatte: nettopp fordi brukeropplevelse handler om menneskelig opplevelse, er det noe av det siste vi bør overlate helt til maskiner. Alt som er relatert til mennesker bør involvere mennesker.
 
         I dette innlegget deler jeg erfaringer fra egen hverdag der mesteparten av koden nå genereres av AI, og diskuterer balansen mellom produktivitet og kvalitet. «With great power comes great responsibility» – vi står fortsatt ansvarlige for det vi lager, enten koden er håndskrevet eller generert. Jeg ser på hva AI er fantastisk til (idémyldring, kodegenerering, sparring), og hvor mennesket fortsatt er uunnværlig: å sikre at løsningene er behagelige, tilgjengelige og fungerer for ekte brukere med ulik bakgrunn, kontekst og behov. Bruk AI for alt det er verdt, men ikke glem å faktisk teste hvordan løsningen oppleves – de grunnleggende prinsippene for god brukeropplevelse gjelder fortsatt.
+      vimeo: https://vimeo.com/1189038141/4698635425
   - time: '11:10'
     event: Pause
   - time: 11:20–11:50
@@ -73,6 +77,7 @@ rooms:
       speaker: Lene Ludvigsen
       description: |-
         Hvordan starter man et designsystem når man har veldig begrenset med tid og ressurser? Lene forteller om hvordan hun har gjort det i Enova, der hun som eneste designer har ansvaret for alt som har med design og UX å gjøre, PLUSS det å lage et designsystem. Er det mulig? Come find out!
+      vimeo: https://vimeo.com/1189034805/0acb4c179c
   - time: '11:50'
     event: Lunsj
   - time: 13:00–13:30
@@ -83,6 +88,7 @@ rooms:
       title: Når koden ikke funker for deg
       speaker: Helén Persson
       description: "Legacy kode? Nei takk, det vil jeg ikke jobbe med. \n\nLegacy kode oppstår sjelden fordi vi er dårlige utviklere. Den oppstår fordi vi leverer, og systemet vokser og utvikler seg. Små MVP'er blir produksjonssystemer. Midlertidige løsninger blir permanente. Og plutselig sitter vi med kode ingen tør eller vil røre.\n\nSå hva gjør man når koden man sitter med ikke lengre fungerer for teamet? \n\nVi moderniserer et sentralt back-office system som leverer data til NRK Radio appen. Systemet er ikke synlig for brukerne, men konsekvensene merkes umiddelbart hvis det feiler.\n\nI dette foredraget deler jeg hvordan vi vurderte full rewrite vs. videreutvikling, hvilke kriterier som faktisk avgjorde valget, og hvordan vi moderniserer uten en risikabel big bang-release."
+      vimeo: https://vimeo.com/1189038832/400ba007f6
   - time: '13:30'
     event: Pause
   - time: 13:40–14:10
@@ -94,6 +100,7 @@ rooms:
       speaker: Trond Arve Wasskog og Audun Fauchald Strand
       description: |-
         Hans Christian Holte gikk av som NAV-direktør i 11. november 2025. Bakgrunnen var kritikk fra Riksrevisjonen, blant annet for manglende audit-logging. I denne presentasjonen går vi gjennom hvordan dette henger sammen sett fra teknisk perspektiv, hvilke tiltak som har blitt gjort, og hvordan vi ser for oss å forbedre internkontrollen framover.
+      vimeo: https://vimeo.com/1189036829/721f290fbe
   - time: '14:10'
     event: Pause
   - time: 14:20–14:50
@@ -111,6 +118,7 @@ rooms:
         Vi jobbar for å senke den kognitive lasten, så utviklarane kan fokusere tida si på produkt. Terraform-modulane våre skal ikkje berre vere riktige – dei skal vere forståelege. Dokumentasjonen skal ikkje berre forklare, men vise veg.
 
         Korleis kombinere kode og kommunikasjon, sikkerheit og smidighet, fridom og ansvar. Om å ta brukaroppleving på alvor – når brukaren er utviklar og verktøyet er Terraform.
+      vimeo: https://vimeo.com/1189037518/be0703f354
   - time: '14:50'
     event: Pause
   - time: 15:00–15:30
@@ -122,6 +130,7 @@ rooms:
       speaker: Jan Greger Hemb
       description: |-
         Hos Tet/Ruter gjorde vi React gøy igjen! Ikke noe mer overkomplisert arkitektur, eller RSC og Redux, bare et jordnært fokus som prioriterer hastighet. Jeg deler våre erfaringer og gir deg en ny beste praksis for 2026: Fra mappestruktur og pakkevalg, til smart strukturering av state.
+      vimeo: https://vimeo.com/1189033396/1e4e88f802
   - time: '15:30'
     event: Pause
   - time: 15:50–16:20
@@ -137,6 +146,7 @@ rooms:
         I denne presentasjonen deler vi erfaringene fra reisen med å tilby interne KI-endepunkter som en tjeneste — fra de første Azure OpenAI-instansene bak API Management, til overgangen mot Microsoft Foundry. Vi ser på de reelle utfordringene: nettverkssikkerhet, identitetsstyring, kostnadsovervåking og policy-håndtering i praksis. Og vi tar opp hva som skjer når tjenestene du har bygget infrastruktur rundt plutselig får nye navn, nye mønstre og nye forutsetninger.
 
         Kort sagt: Lærdom fra skyttergravene for deg som skal levere KI-kapasitet til utviklere — uten å gi slipp på sikkerhet og kontroll.
+      vimeo: https://vimeo.com/1189039510/09fcefe1b6
   - time: '16:20'
     event: Pause
   - time: 16:30–17:00
@@ -148,6 +158,7 @@ rooms:
       speaker: John Kasper Svergja
       description: |-
         SSB har tatt i bruk Nais som applikasjonsplattform for våre utviklere. I dette foredraget deler vi erfaringer fra migreringen og oppsummerer lærdommer etter produksjonssetting.
+      vimeo: https://vimeo.com/1189035710/9776e20ba6
 - name: Rom 2, M4
   subtitle: Plattform & Sikkerhet
   id: rom2
@@ -171,6 +182,7 @@ rooms:
       speaker: Leila Langø og Ole Dag Svebak
       description: |-
         Leila Langø, Gjenopprettingsleder i Skatteetaten, og Ole Dag Svebak, fagansvarlig for Gjenoppretting og IKT beredskap i Skatteetaten, forteller om hvorfor gjenoppretting er kritisk for å oppfylle samfunnsoppdraget når, - ikke hvis, katastrofen inntreffer. Du får en introduksjon til hva gjenoppretting er og hvordan vi jobber for å forbedre gjenopprettingsevnen i Skatteetaten.
+      vimeo: https://vimeo.com/1189023159/74f2e3d2cd
   - time: 09:50
     event: Pause
   - time: 10:00–10:30
@@ -182,6 +194,7 @@ rooms:
       speaker: Knut Haugen
       description: |-
         Leveransekjedesikkerhet kom for alvor på agendaen med Shai-hulud 1.0 og 2.0, og det var jo heller ikke første gang. Økosystemet rundt node.js og javascript er kanskje særlig utsatt. Hvordan kan vi ta enkle grep i vårt eget oppsett i byggepipelines og pakkehåndterere for å motvirke dette?
+      vimeo: https://vimeo.com/1189023983/d07d834072
   - time: '10:30'
     event: Pause
   - time: 10:40–11:10
@@ -199,6 +212,7 @@ rooms:
         Deretter tek vi ein kikk på eIDAS2 og rammeverket for EU Digital Identity Wallet-økosystemet: krav til medlemslanda, rolla til offentlege og private aktørar, deira samvirke og tillitsinfrastruktur. Kva betyr dette i praksis for verksemder, teknologileverandørar og offentleg sektor?
 
         Til slutt oppdaterer vi på status i Noreg: nasjonal sandkasse, pilotering og førebuingar til integrasjon mot europeisk infrastruktur. Kva bør du som utviklar eller løysingsarkitekt førebu deg på no?
+      vimeo: https://vimeo.com/1189022746/5e7ca77535
   - time: '11:10'
     event: Pause
   - time: 11:20–11:50
@@ -210,6 +224,7 @@ rooms:
       speaker: Håvard Elnan
       description: |-
         Jeg tar med noe hardware så setter vi opp en infrastrukturplattform fra bunnen. Vi viser hvordan Norsk helsenett tenker på autonome datasenter, definert av software og automatisert.
+      vimeo: https://vimeo.com/1189023609/1b027d7f09
   - time: '11:50'
     event: Lunsj
   - time: 13:00–13:30
@@ -224,6 +239,7 @@ rooms:
         Trusselmodellering gjennomføres ofte på en måte som ikke øker selvtilliten til deltagerne. Noe av årsaken er at man blir snødd ned av kompleksitet og en grenseløs mengde gjøremål. Man mister selve rosinen i pølsa: avdekke de største sårbarhetene og til å kunne prioritere dem etter et kost-nytte prinsipp
         Foredraget har en introduksjon til trusselmodellering med et enkelt eksempel. Jeg deler også mine erfaringer med trusselmodellering. De dårlige fra et stort selskap hvis-navn-ikke-nevnes, og de gode, nybakte vi nå bruker i Oslo kommune.
         Jeg vil også reflektere over hvordan trusselmodellering kan tas aktivt i bruk fra et endringsledelsesperspektiv (ADKAR): forstå hvorfor dette er nødvendig, ha vilje og motivasjon til å delta, vite hvordan og hva som skal til for endres, å kunne gjennomføre endringen i praksis, og ikke minst: sørge for at trusselmodellering er aktivitet som gjennomføres jevnlig.
+      vimeo: https://vimeo.com/1189022083/d2960f1444
   - time: '13:30'
     event: Pause
   - time: 13:40–14:10
@@ -237,6 +253,7 @@ rooms:
         NSM har for lengst utgitt en veileder for å migrere til kvantesikker kryptografi, og løsningene er i stor grad klare. Mye av migreringen går nesten av seg selv -- rundt 60 % av internettrafikken er allerede kvantesikker -- og noe krever aktiv innsats.
 
         Jeg vil forsøke å vise at det for det meste kan gjøres veldig enkelt og billig, og deretter utruste forsamlingen med litt argumenter de kan bruke når sjefen har fått et dyrt og vanskelig tilbud fra noen som vil selge løsninger basert på kvantefysikk.
+      vimeo: https://vimeo.com/1189023408/05ff7f1485
   - time: '14:10'
     event: Pause
   - time: 14:20–14:50
@@ -247,6 +264,7 @@ rooms:
       title: Gitlab-runner med KubeVirt
       speaker: Christian Skarby
       description: Praktisk demo med oppsett av kubevirt og gitlab-runner for å kjøre CI/CD i bruk-og-kast-VMer.
+      vimeo: https://vimeo.com/1189022949/c5ba17b2b7
   - time: '14:50'
     event: Pause
   - time: 15:00–15:30
@@ -258,6 +276,7 @@ rooms:
       speaker: Raymond Andre Hagen
       description: |-
         Gjennom forskning på forsvar mot avanserte trusselaktører har jeg publisert en del funn på gapet mellom hva som eksperter trur de har behov for , og hva som de burde fokusert på. Del av offentlig PHD arbeid ved NTNU , og mitt arbeid som fagdirektør i Cybersikkerhet ved Digitaliseringsdirektoratet.
+      vimeo: https://vimeo.com/1189022344/cf217d75b7
   - time: '15:30'
     event: Pause
   - time: 15:50–16:00
@@ -272,6 +291,7 @@ rooms:
         Språk er ein fundamental del av korleis vi kommuniserar og tolkar når vi utviklar programvare: korleis formar det hensikt, antagelsar, risiko og sikkerhets implikasjonar?
 
         Ein kikk på korleis vi som utviklarar bør bruke klarspråk for å kommunisere gjennom utviklings-syklusen: fra kravspesifikasjon til produksjon og når ting går galt. Korleis vi brukar språk kan forme konsekvensane av kva som skjer når ting ikkje skjer etter planen.
+      vimeo: https://vimeo.com/1189024128/61b0b94b21
   - time: 16:00–16:10
     duration: 10 min
     talks:
@@ -282,6 +302,7 @@ rooms:
       speaker: Christian Tryti
       description: |-
         Først vise hvor enkelt det er å slette 75TB fra en S3-bucket, så hvordan det ble håndtert i form av varsling til brukere og Post-Incident-Review (aka Post mortem, men det får ikke vi i Politiet lov til å kalle det)
+      vimeo: https://vimeo.com/1189022565/2f28a2ffa7
   - time: 16:10–16:20
     duration: 10 min
     talks:
@@ -294,6 +315,7 @@ rooms:
         Prioritering av sårbarheter er vanskelig og det er ikke uvanlig att utviklere ender opp med "alert fatigue". I Nav prøver vi å løse dette med TittPåTing, et egenutviklet verktøy som hjelper utviklere å prioritere hvilke sårbarheter som bør oppdateres først.
 
         Open-source, selv-følgelig!
+      vimeo: https://vimeo.com/1189022665/f3b00baeae
   - time: '16:20'
     event: Pause
   - time: 16:30–17:00
@@ -305,6 +327,7 @@ rooms:
       speaker: Andreas Nordahl
       description: |-
         Magic er kjent for å være et litt over gjennomsnittet komplisert spill, men visste du at spillet kan modellere en generell datamaskin? I dette foredraget besvarer jeg tre grunnleggende spørsmål som du ikke visste du hadde: (1) Hva er MTG? (2) Hva vil det si å være turingkomplett? (3) Hvordan kan MTG simulere en vilkårlig turingmaskin?
+      vimeo: https://vimeo.com/1189024248/bea60b8b71
 - name: Rom 3, M5
   subtitle: Metode, Produkt & Data
   id: rom3
@@ -330,6 +353,7 @@ rooms:
         Fra ambisjon til praksis: En modningsreise for produktteam.
         De fleste team i offentlig sektor ønsker å jobbe mer produktorientert. Færre vet hva det faktisk krever i hverdagen. I dette foredraget viser vi hvordan vårt eget produkt Teamskolen og vårt egenutviklede verktøy "Teamsirkelen" hjelper team å forstå hvor de er, hva som holder dem igjen – og hvordan de kan ta neste steg i sin produktmodning. Dette gjør vi som ledd i en større strategi og å jobbe med å produktrette hele vår organisasjon, for å møte de store utfordringene Politiet står ovenfor. Vi må både få fart på teknologien vår, samtidig som alle vi som jobber der, må bli enda bedre til å lære sammen og omsette læring til verdi raskt.
         I foredraget vil fag- og personalleder for design Ove Dalen gi dere få innsyn et verktøy vi har utviklet, erfaringene så langt fra ca 50 team, fallgruver og hypoteser om veien videre for oss.
+      vimeo: https://vimeo.com/1189032053/65d8495c9f
   - time: 09:50
     event: Pause
   - time: 10:00–10:30
@@ -340,6 +364,7 @@ rooms:
       title: Fra applikasjonssentrisk til datasentrisk tjenesteutvikling – revolusjon eller evolusjon?
       speaker: Erik Hagen og Audun Vindenes Egge
       description: "Offentlig sektor har i flere tiår anskaffet applikasjoner og fagsystemer på leverandørenes premisser. Informasjonsmodeller og data har fulgt systemene – ikke omvendt. Resultatet er et fragmentert systemlandskap med innelåste data, begrenset gjenbruk, kostnadskrevende integrasjon og manglende evne til å skape sammenhengende tjenester på tvers. \n \nProsjektet Sammenhengende tjenester for barn og unge (SAMT-BU) tar utgangspunkt i at dette ikke lenger er bærekraftig. Ambisjonen er å drive fram et nødvendig systemskifte mot datasentrisk tjenesteutvikling, med pilotering innenfor barn og unge. Felles informasjonsmodeller og standardiserte grensesnitt etableres som grunnmur for samhandling og sammenhengende tjenester med brukeren i sentrum. \n \nEt slikt skifte forutsetter endringer i hvordan vi kravstiller, bestiller og utvikler IT-løsninger. Dette er et komplekst og langsiktig arbeid som krever bred teknologisk og arkitekturfaglig medvirkning. SAMT-BU-prosjektet er i oppstart. Vi har ikke alle svarene, og må arbeide smidig og lærende. I foredraget forteller vi hvor vi er - og hvordan vi ser for oss at vi kan ta det videre i fellesskap."
+      vimeo: https://vimeo.com/1189028240/caf69a2624
   - time: '10:30'
     event: Pause
   - time: 10:40–11:10
@@ -365,6 +390,7 @@ rooms:
         Jeg har tidligere holdt foredrag for blant annet Cisco (2025), hvor jeg presenterte en “anti-scrum”-tilnærming til produktutvikling i norsk kontekst. Dette foredraget bygger videre på de samme prinsippene, tilpasset virkeligheten i offentlig sektor.
 
         Målet er å gi deltakerne konkrete perspektiver de kan ta med seg tilbake til egne team – enten de jobber med digitalisering, tjenesteutvikling eller organisasjonsendring.
+      vimeo: https://vimeo.com/1189029022/39578ad2a5
   - time: '11:10'
     event: Pause
   - time: 11:20–11:50
@@ -380,6 +406,7 @@ rooms:
         Hva kreves det av teamet, poltitets brukere og meg som produktleder, når både måloppnåelse, brukernes arbeidshverdag og samfunnsoppdraget står på spill? Og hva betyr det for oss som borgere at politiet kan jobbe med teknologiutvikling på denne måten?
 
         Tre faktorer gjorde det mulig:Tillit. Mot. Og fart.
+      vimeo: https://vimeo.com/1189030386/f048929131
   - time: '11:50'
     event: Lunsj
   - time: 13:00–13:30
@@ -411,7 +438,7 @@ rooms:
         Det betyr at vi kombinerer brukerinnsikt (kvantitativ og kvalitativ innsikt) og rammeinnsikt (hva vi må forholde oss til eller endre for å skape verdi).
 
         Foredraget passer for alle som jobber med produktutvikling, enten det er teknologer, produktledere, tjenestedesignere, tek-jurister eller andre interesserte.
-
+      vimeo: https://vimeo.com/1189026281/a71e6700c0
   - time: '14:10'
     event: Pause
   - time: 14:20–14:50
@@ -423,6 +450,7 @@ rooms:
       speaker: Nina Kylstad og Ronny Birkeli
       description: |-
         Flere stjerner og planeter stod i samme bane, og etter 20 år med Scrum/Kanban og ca. 470 to ukers sprinter følte vi at det var på tide å gjøre noe med ting som funket sånn passe. Team Altinn Studio fra Digdir deler sine første erfaringer fra hvordan det er å gå over til og kjøre etter Radical Focus som metodikk - og noen vurdering er rundt hvor lurt det er å gjøre det mens man holder på med et stort program (hint: migrering fra Altinn 2 til Altinn 3).
+      vimeo: https://vimeo.com/1189029574/4b25478522
   - time: '14:50'
     event: Pause
   - time: 15:00–15:30
@@ -434,6 +462,7 @@ rooms:
       speaker: Richard Borge
       description: |-
         Presentasjon av patruljens nye arbeidsflate for oppdragshåndtering. Politipatruljen har en veldig variert og til tider hektisk hverdag, og særlig i stressende situasjoner er det viktig med systemer som gir riktig informasjon til riktig tid og samtidig avlaster et allerede overbelastet samband. Hvordan har vi håndtert at patruljen får oppdatert situasjonsforståelse i sanntid på vei til oppdrag? Hvordan ivaretar vi personvern og dataminimering i en asynkron arkitektur?
+      vimeo: https://vimeo.com/1189031265/f4cfd7d35b
   - time: '15:30'
     event: Pause
   - time: 15:50–16:00
@@ -447,6 +476,7 @@ rooms:
       description: |-
         Altfor mange team i offentlig sektor vet nøyaktig hva de har levert, men langt færre kan svare tydelig på hvilken verdi det faktisk skaper for brukerne og samfunnet. Når vi spør om effekt, får vi ofte magefølelse i retur.
         Lars Andreas Tveiten van Woensel Kooy fra Bekk deler erfaringer fra team som har gått fra løsningsfokus til verdifokus – og gir deg konkrete grep for å bevege deg fra antakelser og magefølelse til målbare resultater.
+      vimeo: https://vimeo.com/1189032771/85420f95fd
   - time: 16:00–16:10
     duration: 10 min
     talks:
@@ -457,6 +487,7 @@ rooms:
       speaker: Lotte Johansen
       description: |-
         Et ærlig og humoristisk foredrag om livet i team – og alt som skjer når ting endrer seg. Vi snakker om Kubler-Ross, storming-fasen og hvorfor litt friksjon faktisk er et godt tegn. For det er i stormen vi finner kraften til å skape noe nytt.
+      vimeo: https://vimeo.com/1189027715/9f911f2b27
   - time: 16:10–16:20
     duration: 10 min
     talks:
@@ -467,6 +498,7 @@ rooms:
       speaker: Livar Bergheim
       description: |-
         Dialogporten er løysinga som held oversikt over dialogane du får opp i din nye innboks i Altinn. Vi ser på korleis dette fungerer og heng saman med resten av Altinn og tenesteplattformar utanom.
+      vimeo: https://vimeo.com/1189027201/2908479cb4
   - time: '16:20'
     event: Pause - se andre rom for flere foredrag
 - name: Rom 4, Mesanin
@@ -492,17 +524,17 @@ rooms:
       title: Leesah Game
       speaker: Kyrre Havik
       description: |-
-        Leesah Game er et kurs vi har lang erfaring med å holde som vi har holdt flere ganger tidligere på universiteter og høyskoler i Norge siden 2021, på JavaZone i 2024 og på Booster Conference, 
-        NDC Oslo og Cloud Native Bergen i 2025. Spillet utvikles av flere utviklere fra Nav som jobber sammen på fagsamlinger annenhver uke, slik at kurset blir kontinuerlig utviklet. 
+        Leesah Game er et kurs vi har lang erfaring med å holde som vi har holdt flere ganger tidligere på universiteter og høyskoler i Norge siden 2021, på JavaZone i 2024 og på Booster Conference,
+        NDC Oslo og Cloud Native Bergen i 2025. Spillet utvikles av flere utviklere fra Nav som jobber sammen på fagsamlinger annenhver uke, slik at kurset blir kontinuerlig utviklet.
         Kurset er en god øvelse i blant annet parprogrammering, løsing av oppgaver og hendelsesdrevet programmering.
-        
-        I Nav utvikler vi moderne systemer i hendelsesdrevet mikrotjenestearkitektur som skal løse fremtidens arbeids- og velferdsbehov. Nå vil vi lære dere mer om hvordan vi bygger applikasjoner 
-        og hvordan hendelsesdrevne systemer kan brukes til å løse komplekse utfordringer. Vi kommer til å presentere viktige prinsipper bak hendelsesdrevne systemer før vi kjører i gang med 
-        et “gamified” opplegg hvor man koder sammen to og to. Gjennom kurset skal man utvikle en applikasjon som kobles mot Kafka for å motta utfordringer deltagerenes applikasjon må håndtere. 
-        
-        Dette blir en morsom workshop med litt utfordring og mye moro! Vi ønsker å holde Leesah Game på fagdagen for teknologi i offentlig sektor fordi vi ønsker å spre kunnskapen om 
+
+        I Nav utvikler vi moderne systemer i hendelsesdrevet mikrotjenestearkitektur som skal løse fremtidens arbeids- og velferdsbehov. Nå vil vi lære dere mer om hvordan vi bygger applikasjoner
+        og hvordan hendelsesdrevne systemer kan brukes til å løse komplekse utfordringer. Vi kommer til å presentere viktige prinsipper bak hendelsesdrevne systemer før vi kjører i gang med
+        et “gamified” opplegg hvor man koder sammen to og to. Gjennom kurset skal man utvikle en applikasjon som kobles mot Kafka for å motta utfordringer deltagerenes applikasjon må håndtere.
+
+        Dette blir en morsom workshop med litt utfordring og mye moro! Vi ønsker å holde Leesah Game på fagdagen for teknologi i offentlig sektor fordi vi ønsker å spre kunnskapen om
         hendelsesdrevet utvikling.
-        
+
          Før du kommer til kurset:
 
         * Installer en valgfri IDE
