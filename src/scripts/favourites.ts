@@ -1,5 +1,7 @@
-const STORAGE_KEY = 'offentlig-fagdag:favourites:2026';
-const FILTER_KEY = 'offentlig-fagdag:filter:2026';
+// Favourites are stored per year, taken from the program page's data-program-year.
+const YEAR = document.querySelector<HTMLElement>('[data-program-year]')?.dataset.programYear ?? '';
+const STORAGE_KEY = `offentlig-fagdag:favourites:${YEAR}`;
+const FILTER_KEY = `offentlig-fagdag:filter:${YEAR}`;
 const CHANGE_EVENT = 'favourites:change';
 
 let memoryFallback: Set<string> | null = null;

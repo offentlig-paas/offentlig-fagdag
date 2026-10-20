@@ -1,10 +1,24 @@
 ---
 import { parse } from "yaml";
 import ScheduleBlock from "../components/ScheduleBlock.astro";
-import programYaml from "../data/2026/program.yaml?raw";
 import Base from "../layouts/Base.astro";
 
-const program = parse(programYaml);
+// One page per src/data/<year>/program.yaml, served at /program-<year>.
+export function getStaticPaths() {
+	const files = import.meta.glob<string>("../data/*/program.yaml", {
+		query: "?raw",
+		import: "default",
+		eager: true,
+	});
+	return Object.entries(files).map(([path, raw]) => ({
+		params: { year: path.split("/").at(-2)! },
+		props: { program: parse(raw) },
+	}));
+}
+
+const { year } = Astro.params;
+const { program } = Astro.props;
+const name = `Offentlig fagdag ${year}`;
 
 // Build aggregated "Mine favoritter" schedule: all talks across rooms, grouped by time slot, chronologically.
 interface Talk {
@@ -48,24 +62,24 @@ const favouriteSchedule: Slot[] = [...slots.values()].sort(
 ---
 
 <Base
-  title="Program – Offentlig fagdag 2026"
-  description="Program for Offentlig fagdag 2026, 23. april på Meet Ullevål"
-  ogTitle="Program – Offentlig fagdag 2026"
+  title={`Program – ${name}`}
+  description={`Program for ${name}, ${program.date} på ${program.venue.name}`}
+  ogTitle={`Program – ${name}`}
   ogDescription="Konferansen for teknologer i offentlig sektor"
   activeNav="program"
 >
-  <main class="program-page">
+  <main class="program-page" data-program-year={year}>
     <div class="fixed-width hero">
       <icon-manserpaakart></icon-manserpaakart>
       <div class="hero-text">
         <h1 class="ds-heading" data-size="xl">Program</h1>
-        <h2 class="ds-heading" data-size="md">23. april 2026 på <a class="ds-link" href="https://meet-ullevaal.no">Meet Ullevål</a></h2>
+        <h2 class="ds-heading" data-size="md">{program.date} på <a class="ds-link" href={program.venue.url}>{program.venue.name}</a></h2>
       </div>
     </div>
     <div class="bleed">
       <div>
         <div class="schedule">
-          {program.commonBefore.map((item: any) => (
+          {program.commonBefore?.map((item: any) => (
             <ScheduleBlock {...item} />
           ))}
         </div>
@@ -106,7 +120,7 @@ const favouriteSchedule: Slot[] = [...slots.values()].sort(
 
       <div>
         <div class="schedule">
-          {program.commonAfter.map((item: any) => (
+          {program.commonAfter?.map((item: any) => (
             <ScheduleBlock {...item} />
           ))}
         </div>
