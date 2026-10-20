@@ -336,26 +336,6 @@ header .off-logo {
 	justify-content: center;
 }
 
-/* Program overview on main page */
-.program-overview {
-	display: flex;
-	flex-direction: column;
-	gap: var(--ds-size-3);
-}
-
-.program-overview-item {
-	display: flex;
-	gap: var(--ds-size-4);
-	align-items: baseline;
-}
-
-.program-overview-time {
-	font-weight: 600;
-	white-space: nowrap;
-	min-width: 5ch;
-	font-family: var(--ds-font-family), monospace;
-}
-
 /* Schedule on program page */
 .program-page {
 	gap: var(--ds-size-10);
